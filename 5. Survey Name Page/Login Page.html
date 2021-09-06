@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="Login Page.css"/>
+	<script id="applicationScript" type="text/javascript" src="Login Page.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="page_header">
+			<span class="orange bold">EASY</span><span class="white bold">Feedback</span>
+		</div>
+		<div class="mainmenu">
+			<img class="Master_Logo_RGB" src="Master_Logo_RGB.png"/>
+			<ul class="menu-navi">
+				<li class="active"><a href="#">My Profile</a></li>
+				<li><a href="#">Users</a></li>
+				<li><a href="#">Reports</a></li>
+			</ul>
+			<div class="user_box right">
+				<span class="left white">UserName</span>
+				<svg class="icon left" viewBox="45.422 191.715 30 26.909">
+					<path id="icon" d="M 60.20393371582031 208.0537414550781 C 58.07373809814453 208.0537414550781 56.05233764648438 207.236083984375 54.51207733154297 205.7504577636719 C 54.16775512695313 205.4166870117188 53.85372924804688 205.0494079589844 53.5787353515625 204.6582641601563 C 52.57194519042969 203.2649230957031 52.03709411621094 201.6108093261719 52.03709411621094 199.8818359375 C 52.03709411621094 195.3785858154297 55.70066833496094 191.7150115966797 60.20393371582031 191.7150115966797 C 64.70994567871094 191.7150115966797 68.37581634521484 195.3785858154297 68.37581634521484 199.8818359375 C 68.37581634521484 201.5483703613281 67.87724304199219 203.150146484375 66.93334197998047 204.5141143798828 C 66.65512847900391 204.9208679199219 66.34432220458984 205.2973327636719 66.01055908203125 205.6306457519531 C 64.4716796875 207.1920166015625 62.40804290771484 208.0537414550781 60.20393371582031 208.0537414550781 Z M 60.20393371582031 193.09228515625 C 56.46047210693359 193.09228515625 53.41438293457031 196.1379241943359 53.41438293457031 199.8818359375 C 53.41438293457031 201.3192749023438 53.85924530029297 202.6942596435547 54.70030975341797 203.8589782714844 C 54.93077087402344 204.186767578125 55.1878662109375 204.4874877929688 55.46929168701172 204.7601928710938 C 56.75062561035156 205.99560546875 58.43274688720703 206.6764526367188 60.20393371582031 206.6764526367188 C 62.03664398193359 206.6764526367188 63.75135803222656 205.9607238769531 65.03314971923828 204.6600952148438 C 65.30998229980469 204.3832702636719 65.56661987304688 204.0729217529297 65.79891967773438 203.7331848144531 C 66.58442687988281 202.5978393554688 66.99853515625 201.2669372558594 66.99853515625 199.8818359375 C 66.99853515625 196.1379241943359 63.95060729980469 193.09228515625 60.20393371582031 193.09228515625 Z M 67.67707824707031 205.4906005859375 C 67.37361145019531 205.93408203125 67.03572082519531 206.3482055664063 66.65650939941406 206.7269592285156 C 65.01753997802734 208.3893127441406 62.74318695068359 209.4154052734375 60.21816253662109 209.4154052734375 C 57.7684326171875 209.4154052734375 55.54090881347656 208.4356994628906 53.90790557861328 206.8609924316406 C 53.52869415283203 206.4937133789063 53.18437194824219 206.091552734375 52.88137054443359 205.6600036621094 C 48.41988754272461 208.2552795410156 45.42200088500977 213.0899963378906 45.42200088500977 218.6243896484375 L 75.42200469970703 218.6243896484375 C 75.42200469970703 212.9674072265625 72.29006195068359 208.0450134277344 67.67707824707031 205.4906005859375 Z">
+					</path>
+				</svg>
+				<button id="logout" type="submit">Logout</button>
+			</div>
+		</div>
+	</div>
+	<div id="page_container">
+		<span class="title">New user experience </span>
+		<div class="page_body">
+			<form method="post" action="">
+				<div class="col10">
+					<a class="back-btn" href="surveyname">
+						<svg class="Polygon_1" viewBox="0 0 7 7">
+							<path id="Polygon_1" d="M 3.499999761581421 0 L 7 7 L 0 7 Z">
+							</path>
+						</svg> Back
+					</a>
+				</div>
+				<div class="col10">
+					<input id="save" class="btn-1 left" type="submit" value="Save"/>
+					<button id="Generate_link" class="btn-2 right">Generate Link</button>
+					<label class="search-label right"><input type="text" class="search-input right" placeholder=" Search"></label>
+				</div>
+				<div class="cols-container" id="main-container">
+					<div class="col8" id="questionsContainer">
+
+					</div>
+					<div class="col2 border_left">
+						<ul id="Question_Type">
+							<li class="dropdown ">
+								<a>Question Type
+									<svg class="Polygon_2" viewBox="0 0 8 6">
+										<path id="Polygon_2" d="M 3.999999523162842 0 L 7.999999523162842 6 L 0 6 Z">
+										</path>
+									</svg>
+								</a>
+								<ul class="dropdown-menu">
+									<li onclick="addQuestion('q1example')" class="app1">Text</li>
+									<li onclick="addQuestion('q2example')" class="app2">Rate 1‐5</li>
+									<li onclick="addQuestion('q3example')" class="app3">Choices</li>
+									<li onclick="addQuestion('q4example')" class="app3">Open text answer</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+	<div class="hidden">
+		<div id="q1example">
+			<div class="form-group">
+				<label class="col1">Q1</label>
+				<button type="button" class="close right" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">X</button>
+				<input type="text" placeholder="Click to write text" class="col7" name="question[]">
+			</div>
+		</div>
+		<div id="q2example">
+			<div class="form-group">
+				<label class="col1">Q2 </label>
+				<button type="button" class="close right" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">X</button>
+				<input type="text" placeholder="Click to write text" class="col7" name="question[]">
+				
+				<div id=rates_Q>
+					<ul id="QT">
+						<li class="dropdown_rates"><input type="radio" name="radio"> Rate1</li>
+							<div id="ID07">
+								<div id="Q_T">
+									<ul>Adding Question</ul>
+										<li onclick="addQuestion('q1example')" class="Q1">Text</li>
+										<li onclick="addQuestion('q2example')" class="Q2">Rate 1&dash;5</li>
+										<li onclick="addQuestion('q3example')" class="Q3">Choices</li>
+										<li onclick="addQuestion('q4example')" class="Q4">Open text answer</li>
+								</div>
+							</div>
+							<button id="end" type="submit">End Survey</button>
+						<li class="dropdown_rates"><input type="radio" name="radio"> Rate2</li>
+						<li class="dropdown_rates"><input type="radio" name="radio"> Rate3</li>
+						<li class="dropdown_rates"><input type="radio" name="radio"> Rate4</li>
+						<li class="dropdown_rates"><input type="radio" name="radio"> Rate5</li>
+					</ul>
+
+				</div>
+				
+			</div>
+		</div>
+		<div id="q3example">
+			<div class="form-group">
+				<label class="col1" id="QN">Q3</label>
+				<button type="button" class="close right" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">X</button>
+				<input type="text" placeholder="Click to write text" class="col7" name="question[]" id="choice_Q">
+					
+					<input type="choice" placeholder="Yes" class="col7" name="question[]" id="choice"></input>
+						<div class="col1" id="ID07">
+								<div id="Q_T">
+									<ul>Adding Question</ul>
+										<li onclick="addQuestion('q1example')" class="Q1">Text</li>
+										<li onclick="addQuestion('q2example')" class="Q2">Rate 1&dash;5</li>
+										<li onclick="addQuestion('q3example')" class="Q3">Choices</li>
+										<li onclick="addQuestion('q4example')" class="Q4">Open text answer</li>
+								</div>
+						</div>	
+					
+						
+			</div>		
+		</div>
+		<div id="q4example">
+			<div class="form-group">
+				<label class="col1">Q4</label>
+				<button type="button" class="close right" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">X</button>
+				<input type="text" placeholder="Click to write text" class="col7" name="question[]">
+				<input type="text" placeholder="Click to write text" class="col7" name="question[]" style="margin-left:100px; background-color: #FFF6B6;">
+					<div class="col7" id="ID07" style="padding-left:100px;">
+						<div id="Q_T">
+							<ul>Adding Question</ul>
+								<li onclick="addQuestion('q1example')" class="Q1">Text</li>
+								<li onclick="addQuestion('q2example')" class="Q2">Rate 1&dash;5</li>
+								<li onclick="addQuestion('q3example')" class="Q3">Choices</li>
+								<li onclick="addQuestion('q4example')" class="Q4">Open text answer</li>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+
+	</div>
+</body>
+</html>
